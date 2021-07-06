@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/fs-write-file",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Write data to a file.",
   "license": "Apache-2.0",
   "author": {
