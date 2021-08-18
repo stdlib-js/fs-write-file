@@ -293,7 +293,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [node-fs]: https://nodejs.org/api/fs.html
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
 [standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
