@@ -1,0 +1,34 @@
+{
+  "name": "@stdlib/fs-write-file",
+  "version": "0.0.0",
+  "description": "Write data to a file.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/fs-write-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdfs",
+    "fs",
+    "writefile",
+    "writefilesync",
+    "path",
+    "async",
+    "sync",
+    "file",
+    "write",
+    "open",
+    "filesystem"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
