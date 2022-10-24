@@ -334,7 +334,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
-[standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
+[standard-stream]: https://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 <!-- <related-links> -->
 
