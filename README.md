@@ -24,38 +24,31 @@ limitations under the License.
 
 > Write data to a file.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fs-write-file
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-writeFile = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var writeFile = require( 'path/to/vendor/umd/fs-write-file/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.writeFile;
-})();
-</script>
+var writeFile = require( '@stdlib/fs-write-file' );
 ```
 
 #### writeFile( file, data\[, options], clbk )
@@ -158,12 +151,7 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript">
-(function () {
+```javascript
 var join = require( 'path' ).join;
 var writeFile = require( '@stdlib/fs-write-file' );
 
@@ -185,18 +173,79 @@ function onWrite( error ) {
     }
     console.log( 'Success!' );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/fs-write-file-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: write-file [options] <filepath>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  --enc, --encoding encoding   Encoding. Default: 'utf8'.
+         --flag flag           Flag. Default: 'r'.
+         --mode mode           Mode. Default: 0o666.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   Relative output file paths are resolved relative to the current working directory.
+-   Errors are written to `stderr`.
+-   File contents should be provided over `stdin` as part of a [standard stream][standard-stream] pipeline.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ printf 'beep boop\n' | write-file ./examples/fixtures/file.txt
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -206,8 +255,8 @@ function onWrite( error ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/fs/exists`][@stdlib/fs/exists]</span><span class="delimiter">: </span><span class="description">test whether a path exists on the filesystem.</span>
--   <span class="package-name">[`@stdlib/fs/read-file`][@stdlib/fs/read-file]</span><span class="delimiter">: </span><span class="description">read the entire contents of a file.</span>
+-   <span class="package-name">[`@stdlib/fs-exists`][@stdlib/fs/exists]</span><span class="delimiter">: </span><span class="description">test whether a path exists on the filesystem.</span>
+-   <span class="package-name">[`@stdlib/fs-read-file`][@stdlib/fs/read-file]</span><span class="delimiter">: </span><span class="description">read the entire contents of a file.</span>
 
 </section>
 
@@ -272,6 +321,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cli-section]: https://github.com/stdlib-js/fs-write-file#cli
+[cli-url]: https://github.com/stdlib-js/fs-write-file/tree/cli
+[@stdlib/fs-write-file]: https://github.com/stdlib-js/fs-write-file/tree/main
+
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -284,15 +337,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [node-fs]: https://nodejs.org/api/fs.html
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/umd
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
 [standard-stream]: https://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 <!-- <related-links> -->
 
-[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists/tree/umd
+[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/umd
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
 
 <!-- </related-links> -->
 
