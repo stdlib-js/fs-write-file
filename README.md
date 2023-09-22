@@ -18,26 +18,48 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # Write File
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Write data to a file.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fs-write-file
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
+var writeFile = require( '@stdlib/fs-write-file' );
 ```
 
 #### writeFile( file, data\[, options], clbk )
@@ -62,7 +84,7 @@ The `data` argument may be either a `string` or a [`Buffer`][@stdlib/buffer/ctor
 
 ```javascript
 var join = require( 'path' ).join;
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@esm/index.mjs';
+var string2buffer = require( '@stdlib/buffer-from-string' );
 
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.txt' );
 
@@ -120,7 +142,7 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
     <!-- run-disable -->
 
     ```javascript
-    import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
+    var writeFile = require( '@stdlib/fs-write-file' );
 
     // Explicitly handle the error...
     var err = writeFile.sync( '/path/to/file.txt', 'beep boop\n' );
@@ -140,14 +162,9 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
+```javascript
 var join = require( 'path' ).join;
-import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
+var writeFile = require( '@stdlib/fs-write-file' );
 
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.txt' );
 
@@ -167,17 +184,79 @@ function onWrite( error ) {
     }
     console.log( 'Success!' );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/fs-write-file-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: write-file [options] <filepath>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  --enc, --encoding encoding   Encoding. Default: 'utf8'.
+         --flag flag           Flag. Default: 'r'.
+         --mode mode           Mode. Default: 0o666.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   Relative output file paths are resolved relative to the current working directory.
+-   Errors are written to `stderr`.
+-   File contents should be provided over `stdin` as part of a [standard stream][standard-stream] pipeline.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ printf 'beep boop\n' | write-file ./examples/fixtures/file.txt
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -203,7 +282,7 @@ function onWrite( error ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -233,8 +312,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/fs-write-file.svg
 [npm-url]: https://npmjs.org/package/@stdlib/fs-write-file
 
-[test-image]: https://github.com/stdlib-js/fs-write-file/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/fs-write-file/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/fs-write-file/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/fs-write-file/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/fs-write-file/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/fs-write-file?branch=main
@@ -269,15 +348,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [node-fs]: https://nodejs.org/api/fs.html
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/esm
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
 [standard-stream]: https://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 <!-- <related-links> -->
 
-[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists/tree/esm
+[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/esm
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
 
 <!-- </related-links> -->
 
