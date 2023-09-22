@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/fs-write-file/tags). For example,
+
+```javascript
 import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.1.0-deno/mod.js';
+import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@deno/mod.js';
 ```
 
 #### writeFile( file, data\[, options], clbk )
@@ -131,7 +136,7 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
     <!-- run-disable -->
 
     ```javascript
-    import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.1.0-deno/mod.js';
+    import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@deno/mod.js';
 
     // Explicitly handle the error...
     var err = writeFile.sync( '/path/to/file.txt', 'beep boop\n' );
@@ -153,7 +158,7 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
 
 ```javascript
 var join = require( 'path' ).join;
-import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.1.0-deno/mod.js';
+import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@deno/mod.js';
 
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.txt' );
 
