@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/fs-write-file",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Write data to a file.",
   "license": "Apache-2.0",
   "author": {
@@ -41,10 +41,10 @@
   },
   "dependencies": {
     "@stdlib/cli-ctor": "^0.1.1",
-    "@stdlib/fs-read-file": "^0.1.1",
-    "@stdlib/process-cwd": "^0.1.1",
-    "@stdlib/process-read-stdin": "^0.1.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1"
+    "@stdlib/fs-read-file": "^0.2.0",
+    "@stdlib/process-cwd": "^0.2.0",
+    "@stdlib/process-read-stdin": "^0.2.0",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.1.1",
