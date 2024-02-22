@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/fs-write-file/tags). For example,
+
+```javascript
 import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.2.1-esm/index.mjs';
+import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
 ```
 
 #### writeFile( file, data\[, options], clbk )
@@ -131,7 +136,7 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
     <!-- run-disable -->
 
     ```javascript
-    import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.2.1-esm/index.mjs';
+    import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
 
     // Explicitly handle the error...
     var err = writeFile.sync( '/path/to/file.txt', 'beep boop\n' );
@@ -158,7 +163,7 @@ The function accepts the same `options` and has the same defaults as [`fs.writeF
 <script type="module">
 
 var join = require( 'path' ).join;
-import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@v0.2.1-esm/index.mjs';
+import writeFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-write-file@esm/index.mjs';
 
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.txt' );
 
