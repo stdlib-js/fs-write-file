@@ -44,7 +44,8 @@
     "@stdlib/fs-read-file": "^0.2.1",
     "@stdlib/process-cwd": "^0.2.1",
     "@stdlib/process-read-stdin": "^0.2.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.0",
