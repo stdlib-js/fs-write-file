@@ -164,16 +164,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/fs-write-file-cli.svg
 [npm-url]: https://npmjs.org/package/@stdlib/fs-write-file-cli
 
-[test-image]: https://github.com/stdlib-js/fs-write-file@v0.2.2/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/fs-write-file@v0.2.2/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/fs-write-file/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/fs-write-file/actions/workflows/test.yml?query=branch:v0.2.2
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/fs-write-file@v0.2.2/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/fs-write-file@v0.2.2?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/fs-write-file/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/fs-write-file?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/fs-write-file@v0.2.2.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/fs-write-file@v0.2.2/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/fs-write-file.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/fs-write-file/main
 
 -->
 
@@ -184,22 +184,22 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
-[cli-section]: https://github.com/stdlib-js/fs-write-file@v0.2.2#cli
-[cli-url]: https://github.com/stdlib-js/fs-write-file@v0.2.2/tree/cli
-[@stdlib/fs-write-file]: https://github.com/stdlib-js/fs-write-file@v0.2.2/tree/main
+[cli-section]: https://github.com/stdlib-js/fs-write-file#cli
+[cli-url]: https://github.com/stdlib-js/fs-write-file/tree/cli
+[@stdlib/fs-write-file]: https://github.com/stdlib-js/fs-write-file/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/fs-write-file@v0.2.2/tree/deno
-[deno-readme]: https://github.com/stdlib-js/fs-write-file@v0.2.2/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/fs-write-file@v0.2.2/tree/umd
-[umd-readme]: https://github.com/stdlib-js/fs-write-file@v0.2.2/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/fs-write-file@v0.2.2/tree/esm
-[esm-readme]: https://github.com/stdlib-js/fs-write-file@v0.2.2/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/fs-write-file@v0.2.2/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/fs-write-file/tree/deno
+[deno-readme]: https://github.com/stdlib-js/fs-write-file/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/fs-write-file/tree/umd
+[umd-readme]: https://github.com/stdlib-js/fs-write-file/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/fs-write-file/tree/esm
+[esm-readme]: https://github.com/stdlib-js/fs-write-file/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/fs-write-file/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/fs-write-file@v0.2.2/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/fs-write-file/main/LICENSE
 
 [node-fs]: https://nodejs.org/api/fs.html
 
