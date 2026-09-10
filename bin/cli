@@ -27,7 +27,7 @@ var readFileSync = require( '@stdlib/fs-read-file' ).sync;
 var CLI = require( '@stdlib/cli-ctor' );
 var stdin = require( '@stdlib/process-read-stdin' );
 var cwd = require( '@stdlib/process-cwd' );
-var writeFile = require( './../lib' );
+var writeFile = require( '@stdlib/fs-write-file' );
 
 
 // MAIN //
